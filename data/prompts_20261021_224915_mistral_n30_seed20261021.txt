@@ -1,0 +1,594 @@
+=== S_usage_P1 ===
+[SYSTEM]
+You are the Chief Financial Officer of Northbridge Components, a manufacturing company with about 400 employees. You own the company's annual budget and approve software contracts. You answer to the CEO for keeping spending within budget and for the accuracy of the cost forecast. You judge purchases by their total annual cost and their business return. You do not use the invoice system yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €0.40 for each invoice it processes, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 80,000 invoices it would be €32,000, and at 160,000 invoices it would be €64,000.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S6. Our employees might hesitate to use the service because each use costs money.
+S2. The way this service is priced is fair.
+S1. We could forecast our annual spend on this service with confidence.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_usage_P1 ===
+[SYSTEM]
+You are the Chief Financial Officer of Northbridge Components, a manufacturing company with about 400 employees. You own the company's annual budget and approve software contracts. You answer to the CEO for keeping spending within budget and for the accuracy of the cost forecast. You judge purchases by their total annual cost and their business return. You do not use the invoice system yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €0.40 for each invoice it processes, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 40,000 invoices it would be €16,000, and at 200,000 invoices it would be €80,000.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S2. The way this service is priced is fair.
+S1. We could forecast our annual spend on this service with confidence.
+S5. I worry that our actual bill could turn out much higher than planned.
+S6. Our employees might hesitate to use the service because each use costs money.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== S_seat_P1 ===
+[SYSTEM]
+You are the Chief Financial Officer of Northbridge Components, a manufacturing company with about 400 employees. You own the company's annual budget and approve software contracts. You answer to the CEO for keeping spending within budget and for the accuracy of the cost forecast. You judge purchases by their total annual cost and their business return. You do not use the invoice system yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €100 per month for each licensed user, billed monthly. Northbridge would license 40 users. There is no limit on the number of invoices processed. The annual cost would be €48,000, whether Northbridge processes 80,000, 120,000 or 160,000 invoices.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S1. We could forecast our annual spend on this service with confidence.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S2. The way this service is priced is fair.
+S6. Our employees might hesitate to use the service because each use costs money.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_seat_P1 ===
+[SYSTEM]
+You are the Chief Financial Officer of Northbridge Components, a manufacturing company with about 400 employees. You own the company's annual budget and approve software contracts. You answer to the CEO for keeping spending within budget and for the accuracy of the cost forecast. You judge purchases by their total annual cost and their business return. You do not use the invoice system yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €100 per month for each licensed user, billed monthly. Northbridge would license 40 users. There is no limit on the number of invoices processed. The annual cost would be €48,000, whether Northbridge processes 40,000, 120,000 or 200,000 invoices.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S2. The way this service is priced is fair.
+S6. Our employees might hesitate to use the service because each use costs money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S1. We could forecast our annual spend on this service with confidence.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== S_hybrid_P1 ===
+[SYSTEM]
+You are the Chief Financial Officer of Northbridge Components, a manufacturing company with about 400 employees. You own the company's annual budget and approve software contracts. You answer to the CEO for keeping spending within budget and for the accuracy of the cost forecast. You judge purchases by their total annual cost and their business return. You do not use the invoice system yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges a fixed platform fee of €1,800 per month (€21,600 per year), plus €0.22 for each invoice processed, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 80,000 invoices it would be €39,200, and at 160,000 invoices it would be €56,800.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S2. The way this service is priced is fair.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S1. We could forecast our annual spend on this service with confidence.
+S6. Our employees might hesitate to use the service because each use costs money.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_hybrid_P1 ===
+[SYSTEM]
+You are the Chief Financial Officer of Northbridge Components, a manufacturing company with about 400 employees. You own the company's annual budget and approve software contracts. You answer to the CEO for keeping spending within budget and for the accuracy of the cost forecast. You judge purchases by their total annual cost and their business return. You do not use the invoice system yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges a fixed platform fee of €1,800 per month (€21,600 per year), plus €0.22 for each invoice processed, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 40,000 invoices it would be €30,400, and at 200,000 invoices it would be €65,600.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S6. Our employees might hesitate to use the service because each use costs money.
+S1. We could forecast our annual spend on this service with confidence.
+S5. I worry that our actual bill could turn out much higher than planned.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S2. The way this service is priced is fair.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== S_usage_P2 ===
+[SYSTEM]
+You are the Accounts Payable Operations Manager at Northbridge Components, a manufacturing company with about 400 employees. You lead the finance team of 40 people who process supplier invoices every day. You do not own the budget and cannot approve large contracts, but you recommend tools and carry responsibility for getting invoices processed on time, especially at month end and during busy periods. Your team would use the service daily.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €0.40 for each invoice it processes, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 80,000 invoices it would be €32,000, and at 160,000 invoices it would be €64,000.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S5. I worry that our actual bill could turn out much higher than planned.
+S6. Our employees might hesitate to use the service because each use costs money.
+S1. We could forecast our annual spend on this service with confidence.
+S2. The way this service is priced is fair.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_usage_P2 ===
+[SYSTEM]
+You are the Accounts Payable Operations Manager at Northbridge Components, a manufacturing company with about 400 employees. You lead the finance team of 40 people who process supplier invoices every day. You do not own the budget and cannot approve large contracts, but you recommend tools and carry responsibility for getting invoices processed on time, especially at month end and during busy periods. Your team would use the service daily.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €0.40 for each invoice it processes, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 40,000 invoices it would be €16,000, and at 200,000 invoices it would be €80,000.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S2. The way this service is priced is fair.
+S5. I worry that our actual bill could turn out much higher than planned.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S6. Our employees might hesitate to use the service because each use costs money.
+S1. We could forecast our annual spend on this service with confidence.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== S_seat_P2 ===
+[SYSTEM]
+You are the Accounts Payable Operations Manager at Northbridge Components, a manufacturing company with about 400 employees. You lead the finance team of 40 people who process supplier invoices every day. You do not own the budget and cannot approve large contracts, but you recommend tools and carry responsibility for getting invoices processed on time, especially at month end and during busy periods. Your team would use the service daily.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €100 per month for each licensed user, billed monthly. Northbridge would license 40 users. There is no limit on the number of invoices processed. The annual cost would be €48,000, whether Northbridge processes 80,000, 120,000 or 160,000 invoices.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S2. The way this service is priced is fair.
+S5. I worry that our actual bill could turn out much higher than planned.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S6. Our employees might hesitate to use the service because each use costs money.
+S1. We could forecast our annual spend on this service with confidence.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_seat_P2 ===
+[SYSTEM]
+You are the Accounts Payable Operations Manager at Northbridge Components, a manufacturing company with about 400 employees. You lead the finance team of 40 people who process supplier invoices every day. You do not own the budget and cannot approve large contracts, but you recommend tools and carry responsibility for getting invoices processed on time, especially at month end and during busy periods. Your team would use the service daily.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €100 per month for each licensed user, billed monthly. Northbridge would license 40 users. There is no limit on the number of invoices processed. The annual cost would be €48,000, whether Northbridge processes 40,000, 120,000 or 200,000 invoices.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S1. We could forecast our annual spend on this service with confidence.
+S6. Our employees might hesitate to use the service because each use costs money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S2. The way this service is priced is fair.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== S_hybrid_P2 ===
+[SYSTEM]
+You are the Accounts Payable Operations Manager at Northbridge Components, a manufacturing company with about 400 employees. You lead the finance team of 40 people who process supplier invoices every day. You do not own the budget and cannot approve large contracts, but you recommend tools and carry responsibility for getting invoices processed on time, especially at month end and during busy periods. Your team would use the service daily.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges a fixed platform fee of €1,800 per month (€21,600 per year), plus €0.22 for each invoice processed, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 80,000 invoices it would be €39,200, and at 160,000 invoices it would be €56,800.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S2. The way this service is priced is fair.
+S6. Our employees might hesitate to use the service because each use costs money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S1. We could forecast our annual spend on this service with confidence.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_hybrid_P2 ===
+[SYSTEM]
+You are the Accounts Payable Operations Manager at Northbridge Components, a manufacturing company with about 400 employees. You lead the finance team of 40 people who process supplier invoices every day. You do not own the budget and cannot approve large contracts, but you recommend tools and carry responsibility for getting invoices processed on time, especially at month end and during busy periods. Your team would use the service daily.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges a fixed platform fee of €1,800 per month (€21,600 per year), plus €0.22 for each invoice processed, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 40,000 invoices it would be €30,400, and at 200,000 invoices it would be €65,600.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S6. Our employees might hesitate to use the service because each use costs money.
+S1. We could forecast our annual spend on this service with confidence.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S2. The way this service is priced is fair.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== S_usage_P3 ===
+[SYSTEM]
+You are the Procurement Manager at Northbridge Components, a manufacturing company with about 400 employees. You run vendor selection and negotiate software contracts. You are measured on cost savings and on avoiding unfavorable contract terms. You compare each offer with alternatives on the market and review the total cost over the contract term. You will not use the service yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €0.40 for each invoice it processes, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 80,000 invoices it would be €32,000, and at 160,000 invoices it would be €64,000.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S2. The way this service is priced is fair.
+S1. We could forecast our annual spend on this service with confidence.
+S5. I worry that our actual bill could turn out much higher than planned.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S6. Our employees might hesitate to use the service because each use costs money.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_usage_P3 ===
+[SYSTEM]
+You are the Procurement Manager at Northbridge Components, a manufacturing company with about 400 employees. You run vendor selection and negotiate software contracts. You are measured on cost savings and on avoiding unfavorable contract terms. You compare each offer with alternatives on the market and review the total cost over the contract term. You will not use the service yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €0.40 for each invoice it processes, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 40,000 invoices it would be €16,000, and at 200,000 invoices it would be €80,000.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S2. The way this service is priced is fair.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S1. We could forecast our annual spend on this service with confidence.
+S6. Our employees might hesitate to use the service because each use costs money.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S5. I worry that our actual bill could turn out much higher than planned.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== S_seat_P3 ===
+[SYSTEM]
+You are the Procurement Manager at Northbridge Components, a manufacturing company with about 400 employees. You run vendor selection and negotiate software contracts. You are measured on cost savings and on avoiding unfavorable contract terms. You compare each offer with alternatives on the market and review the total cost over the contract term. You will not use the service yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €100 per month for each licensed user, billed monthly. Northbridge would license 40 users. There is no limit on the number of invoices processed. The annual cost would be €48,000, whether Northbridge processes 80,000, 120,000 or 160,000 invoices.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S6. Our employees might hesitate to use the service because each use costs money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S2. The way this service is priced is fair.
+S1. We could forecast our annual spend on this service with confidence.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_seat_P3 ===
+[SYSTEM]
+You are the Procurement Manager at Northbridge Components, a manufacturing company with about 400 employees. You run vendor selection and negotiate software contracts. You are measured on cost savings and on avoiding unfavorable contract terms. You compare each offer with alternatives on the market and review the total cost over the contract term. You will not use the service yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges €100 per month for each licensed user, billed monthly. Northbridge would license 40 users. There is no limit on the number of invoices processed. The annual cost would be €48,000, whether Northbridge processes 40,000, 120,000 or 200,000 invoices.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S2. The way this service is priced is fair.
+S1. We could forecast our annual spend on this service with confidence.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S6. Our employees might hesitate to use the service because each use costs money.
+S5. I worry that our actual bill could turn out much higher than planned.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== S_hybrid_P3 ===
+[SYSTEM]
+You are the Procurement Manager at Northbridge Components, a manufacturing company with about 400 employees. You run vendor selection and negotiate software contracts. You are measured on cost savings and on avoiding unfavorable contract terms. You compare each offer with alternatives on the market and review the total cost over the contract term. You will not use the service yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 80,000 and 160,000 invoices, depending on orders and the season.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges a fixed platform fee of €1,800 per month (€21,600 per year), plus €0.22 for each invoice processed, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 80,000 invoices it would be €39,200, and at 160,000 invoices it would be €56,800.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S2. The way this service is priced is fair.
+S5. I worry that our actual bill could turn out much higher than planned.
+S6. Our employees might hesitate to use the service because each use costs money.
+S1. We could forecast our annual spend on this service with confidence.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+
+Finally, give one sentence explaining your overall view of this offer.
+
+=== V_hybrid_P3 ===
+[SYSTEM]
+You are the Procurement Manager at Northbridge Components, a manufacturing company with about 400 employees. You run vendor selection and negotiate software contracts. You are measured on cost savings and on avoiding unfavorable contract terms. You compare each offer with alternatives on the market and review the total cost over the contract term. You will not use the service yourself.
+
+You are taking part in a business survey. Read the offer you are shown and answer the questions as the person described above would, based only on the information given. Give your honest assessment. There are no right or wrong answers.
+[USER]
+Northbridge Components is a manufacturing company with about 400 employees. Its finance team has 40 people who process supplier invoices. Last year the team handled about 120,000 invoices. Over the past three years, yearly volume has varied between 40,000 and 200,000 invoices, depending on the timing of large customer projects.
+
+Northbridge is considering InvoiceFlow, a service from an established software provider. InvoiceFlow automatically reads incoming invoices, extracts the key data, codes them to the right accounts and routes them for approval. The provider estimates it would cut manual processing time by about 60%. The contract runs for 12 months. Onboarding, customer support and all software updates are included. All prices are in euros and exclude VAT.
+
+InvoiceFlow charges a fixed platform fee of €1,800 per month (€21,600 per year), plus €0.22 for each invoice processed, billed monthly in arrears. Any number of employees can use the service. At last year's volume of 120,000 invoices, the annual cost would be €48,000. At 40,000 invoices it would be €30,400, and at 200,000 invoices it would be €65,600.
+
+Please answer the following questions about this offer.
+
+Question 0. According to the offer, how is the annual fee determined?
+A. By the number of invoices processed
+B. By the number of licensed users
+C. By a fixed monthly fee plus the number of invoices processed
+D. The offer does not say
+
+Now rate each statement from 1 (strongly disagree) to 7 (strongly agree). Use the field with the same name as the statement.
+PV1. Considering what we would pay and what we would get, this offer is good value for our company.
+PV2. The benefits of this service outweigh what we would have to give up under this pricing arrangement.
+PV3. Compared with similar offers on the market, this offer delivers more value for our money.
+S5. I worry that our actual bill could turn out much higher than planned.
+S2. The way this service is priced is fair.
+S4. This pricing would let us adjust easily if our needs change during the contract.
+S1. We could forecast our annual spend on this service with confidence.
+S3. Under this pricing, our costs would rise and fall with how much we actually use the service.
+S6. Our employees might hesitate to use the service because each use costs money.
+
+Finally, give one sentence explaining your overall view of this offer.
+
