@@ -18,8 +18,8 @@ library(httr2)       # only used to list the available models (Lab 5)
 # ---- 1. Configuration ---------------------------------------------------------
 
 N_DRAWS        = 30           # respondents (draws) per cell; 18 cells in total
-MODEL_KEY      = "gptoss"     # "gptoss" (main run) or "mistral" (robustness run)
-SCALE_REVERSED = FALSE        # TRUE for the reversed anchor robustness run
+MODEL_KEY      = "mistral"     # "gptoss" (main run) or "mistral" (robustness run)
+SCALE_REVERSED = TRUE        # TRUE for the reversed anchor robustness run
 TEMPERATURE    = 1
 PROMPT_VERSION = "v1"
 SEED           = 20261021
