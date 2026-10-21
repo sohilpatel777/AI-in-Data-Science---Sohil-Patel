@@ -4,8 +4,13 @@
 #
 # HOW TO RUN: run the whole file from the repository root. No API calls.
 # One specification is analysed per call of run_spec(). To add another one
-# (for example Mistral, or a reversed run), add one more spec list at the
-# bottom of the file and call run_spec() on it.
+# (for example Mistral), add one more spec list in the configuration and call
+# run_spec() on it at the bottom of the file. compare_specs() then compares two
+# specifications that are already in memory (no new bootstrap).
+#
+# IMPORTANT: the comparison metrics measure disagreement with a reference
+# specification (error proxies), not accuracy, because we have no human
+# validation sample.
 #
 # Outcome: pv_mean (mean of pv1 to pv3, 1 to 7, higher = more perceived value).
 # Only rows with valid == TRUE are analysed.
@@ -35,6 +40,13 @@ SPEC_GPTOSS_NORMAL = list(
   name     = "gptoss_normal",
   model    = "openai-gpt-oss-120b",
   reversed = FALSE
+)
+
+# Same model, reversed anchors (its CSV is already recoded to normal direction)
+SPEC_GPTOSS_REVERSED = list(
+  name     = "gptoss_reversed",
+  model    = "openai-gpt-oss-120b",
+  reversed = TRUE
 )
 
 # ---- 2. Finding and preparing the data ---------------------------------------
@@ -228,6 +240,98 @@ run_spec = function(spec) {
   invisible(list(cells = cell_tab, contrasts = contrast_tab))
 }
 
-# ---- 8. Run -------------------------------------------------------------------
+# ---- 8. Comparison of two specifications ------------------------------------
 
-res_gptoss_normal = run_spec(SPEC_GPTOSS_NORMAL)
+# ref and cmp are the results returned by run_spec(). The reference is ref and
+# every difference is cmp minus ref. Nothing is bootstrapped again here.
+
+# Cell level: both means and their difference
+compare_cells = function(ref, cmp) {
+  r = ref$cells
+  c2 = cmp$cells
+  m = merge(r[c("cell_id", "profile", "pricing", "persona", "mean",
+                "all_identical")],
+            c2[c("cell_id", "mean", "all_identical")],
+            by = "cell_id", suffixes = c("_ref", "_cmp"))
+  m$diff = m$mean_cmp - m$mean_ref
+  m = m[match(r$cell_id, m$cell_id), ]   # keep the order of the cell table
+  rownames(m) = NULL
+  m[c("cell_id", "profile", "pricing", "persona", "mean_ref", "mean_cmp",
+      "diff", "all_identical_ref", "all_identical_cmp")]
+}
+
+# Says whether the interval excludes zero in both, one or neither specification
+interval_agreement = function(excl_ref, excl_cmp) {
+  n_excl = excl_ref + excl_cmp           # TRUE counts as 1
+  c("neither", "one", "both")[n_excl + 1]
+}
+
+# Contrast level: both estimates, same sign, size gap, interval agreement.
+# A contrast of exactly 0 has sign 0 and only matches another exact 0.
+compare_contrasts = function(ref, cmp) {
+  keys = c("scope", "persona", "profile", "contrast")
+  m = merge(ref$contrasts[c(keys, "estimate", "excludes_zero")],
+            cmp$contrasts[c(keys, "estimate", "excludes_zero")],
+            by = keys, suffixes = c("_ref", "_cmp"))
+  m = m[match(do.call(paste, ref$contrasts[keys]), do.call(paste, m[keys])), ]
+  m$same_sign = sign(m$estimate_ref) == sign(m$estimate_cmp)
+  m$size_gap = abs(m$estimate_cmp - m$estimate_ref)
+  m$interval_agreement = interval_agreement(m$excludes_zero_ref,
+                                            m$excludes_zero_cmp)
+  rownames(m) = NULL
+  m[c(keys, "estimate_ref", "estimate_cmp", "same_sign", "size_gap",
+      "excludes_zero_ref", "excludes_zero_cmp", "interval_agreement")]
+}
+
+# One row per error proxy
+summarise_comparison = function(cells, contrasts) {
+  agree = table(factor(contrasts$interval_agreement,
+                       levels = c("both", "one", "neither")))
+  data.frame(
+    metric = c("mean absolute difference of cell means",
+               "mean signed difference of cell means (cmp minus ref)",
+               "correlation of cell means",
+               "share of contrasts with the same sign",
+               "mean absolute gap in contrast size",
+               "contrasts with interval excluding zero in both",
+               "contrasts with interval excluding zero in one",
+               "contrasts with interval excluding zero in neither",
+               "flat cells in ref", "flat cells in cmp"),
+    value = c(mean(abs(cells$diff)), mean(cells$diff),
+              cor(cells$mean_ref, cells$mean_cmp),
+              mean(contrasts$same_sign), mean(contrasts$size_gap),
+              as.vector(agree),
+              sum(cells$all_identical_ref), sum(cells$all_identical_cmp)))
+}
+
+# Build the three comparison tables and write them as csv files (tables only)
+compare_specs = function(ref, cmp, out_dir = file.path("results", "comparison"),
+                         ...) {
+  dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+  cells = compare_cells(ref, cmp)
+  contrasts = compare_contrasts(ref, cmp)
+  summary_tab = summarise_comparison(cells, contrasts)
+
+  round_numbers = function(d) {
+    d[] = lapply(d, function(x) if (is.double(x)) round(x, 4) else x)
+    d
+  }
+  write.csv(round_numbers(cells), file.path(out_dir, "cell_comparison.csv"),
+            row.names = FALSE, ...)
+  write.csv(round_numbers(contrasts),
+            file.path(out_dir, "contrast_comparison.csv"),
+            row.names = FALSE, ...)
+  write.csv(round_numbers(summary_tab),
+            file.path(out_dir, "comparison_summary.csv"),
+            row.names = FALSE, ...)
+  cat("Comparison tables written to", out_dir, "\n")
+  invisible(list(cells = cells, contrasts = contrasts, summary = summary_tab))
+}
+
+# ---- 9. Run -------------------------------------------------------------------
+
+res_gptoss_normal   = run_spec(SPEC_GPTOSS_NORMAL)
+res_gptoss_reversed = run_spec(SPEC_GPTOSS_REVERSED)
+
+# Reference is normal, every difference is reversed minus normal
+comparison = compare_specs(res_gptoss_normal, res_gptoss_reversed)
