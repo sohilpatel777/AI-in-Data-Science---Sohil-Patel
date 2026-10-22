@@ -112,7 +112,7 @@ AI as expected is used for this project. I have specified below as how, when and
 
 3. Human role: the researchers set the research question and design, approved every step, ran all code themselves, made all Git commits and are responsible for the results. AI generated code was checked by skimming and by testing the output, not by line by line review. The AI did not run any Git command.
 
-4. All data come from the logged API runs
+4. All data come from the logged LLM API runs
 
 
 ## 6. References
