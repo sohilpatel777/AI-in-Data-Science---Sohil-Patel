@@ -1,0 +1,22 @@
+"scope","persona","profile","contrast","estimate","ci_low","ci_high","excludes_zero"
+"overall","all","all","usage minus seat",-0.1438,-0.2894,0.0013,FALSE
+"overall","all","all","usage minus hybrid",0.0209,-0.1175,0.1589,FALSE
+"overall","all","all","hybrid minus seat",-0.1647,-0.2907,-0.0348,TRUE
+"block","P1","S","usage minus seat",-0.3226,-0.7912,0.12,FALSE
+"block","P1","S","usage minus hybrid",0.2556,-0.2,0.7,FALSE
+"block","P1","S","hybrid minus seat",-0.5782,-0.9787,-0.201,TRUE
+"block","P1","V","usage minus seat",-0.2207,-0.4958,0.0576,FALSE
+"block","P1","V","usage minus hybrid",0.1931,-0.0584,0.4625,FALSE
+"block","P1","V","hybrid minus seat",-0.4138,-0.6897,-0.1379,TRUE
+"block","P2","S","usage minus seat",-0.1069,-0.5805,0.3457,FALSE
+"block","P2","S","usage minus hybrid",-0.2448,-0.7039,0.1544,FALSE
+"block","P2","S","hybrid minus seat",0.1379,-0.1494,0.4368,FALSE
+"block","P2","V","usage minus seat",-0.1958,-0.4495,0.0433,FALSE
+"block","P2","V","usage minus hybrid",0,-0.2989,0.2874,FALSE
+"block","P2","V","hybrid minus seat",-0.1958,-0.4795,0.0755,FALSE
+"block","P3","S","usage minus seat",-0.0429,-0.3651,0.285,FALSE
+"block","P3","S","usage minus hybrid",0.0483,-0.233,0.3533,FALSE
+"block","P3","S","hybrid minus seat",-0.0911,-0.3838,0.202,FALSE
+"block","P3","V","usage minus seat",0.0267,-0.3013,0.3658,FALSE
+"block","P3","V","usage minus hybrid",-0.1457,-0.3806,0.0915,FALSE
+"block","P3","V","hybrid minus seat",0.1724,-0.1379,0.4943,FALSE

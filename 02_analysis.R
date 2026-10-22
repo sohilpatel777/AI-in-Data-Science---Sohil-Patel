@@ -3,14 +3,20 @@
 # Synthetic B2B buyers and pricing structure: analysis of perceived value
 #
 # HOW TO RUN: run the whole file from the repository root. No API calls.
-# One specification is analysed per call of run_spec(). To add another one
-# (for example Mistral), add one more spec list in the configuration and call
-# run_spec() on it at the bottom of the file. compare_specs() then compares two
-# specifications that are already in memory (no new bootstrap).
+# One specification is analysed per call of run_spec(). To add another one,
+# add one more spec list in the configuration and call run_spec() on it at the
+# bottom of the file. compare_specs() then compares two specifications that
+# are already in memory (no new bootstrap).
 #
-# IMPORTANT: the comparison metrics measure disagreement with a reference
-# specification (error proxies), not accuracy, because we have no human
-# validation sample.
+# Two types of comparison, always written as cmp minus ref (cmp = comparison
+# specification, ref = reference specification):
+#   1. Scale direction sensitivity: reversed versus normal for the same model
+#      (reference = normal).
+#   2. Model sensitivity: Mistral versus GPT OSS for the same scale direction
+#      (reference = GPT OSS).
+#
+# IMPORTANT:the comparison metrics measure disagreement with a reference specification,
+# not accuracy, because we have no human validation sample.
 #
 # Outcome: pv_mean (mean of pv1 to pv3, 1 to 7, higher = more perceived value).
 # Only rows with valid == TRUE are analysed.
@@ -49,11 +55,26 @@ SPEC_GPTOSS_REVERSED = list(
   reversed = TRUE
 )
 
+# Mistral specifications. The model is matched by the word mistral (any case).
+SPEC_MISTRAL_NORMAL = list(
+  name     = "mistral_normal",
+  model    = "mistral",
+  reversed = FALSE
+)
+
+SPEC_MISTRAL_REVERSED = list(
+  name     = "mistral_reversed",
+  model    = "mistral",
+  reversed = TRUE
+)
+
 # ---- 2. Finding and preparing the data ---------------------------------------
 
 # Read the CSV files in data/ and keep the ones that match the specification.
 # Matching uses the contents of the columns model and scale_reversed and the
-# number of rows, never the file name.
+# number of rows, never the file name. The model matches when it contains the
+# word in spec$model, ignoring upper and lower case (both sides are lowered).
+
 find_data = function(spec, data_dir = "data") {
   files = list.files(data_dir, pattern = "^responses_.*[.]csv$",
                      full.names = TRUE)
@@ -62,7 +83,7 @@ find_data = function(spec, data_dir = "data") {
     d = read.csv(f, stringsAsFactors = FALSE)
     ok = all(c("model", "scale_reversed", "valid", "run_id") %in% names(d)) &&
       nrow(d) == N_EXPECTED &&
-      all(d$model == spec$model) &&
+      all(grepl(tolower(spec$model), tolower(d$model), fixed = TRUE)) &&
       all(as.logical(d$scale_reversed) == spec$reversed)
     if (ok) {
       candidates[[f]] = list(file = f, run_id = d$run_id[1],
@@ -274,7 +295,9 @@ compare_contrasts = function(ref, cmp) {
             cmp$contrasts[c(keys, "estimate", "excludes_zero")],
             by = keys, suffixes = c("_ref", "_cmp"))
   m = m[match(do.call(paste, ref$contrasts[keys]), do.call(paste, m[keys])), ]
-  m$same_sign = sign(m$estimate_ref) == sign(m$estimate_cmp)
+  # Round before taking the sign, so that computer noise such as -8.9e-16 is
+  # treated as the exact 0 it really is
+  m$same_sign = sign(round(m$estimate_ref, 10)) == sign(round(m$estimate_cmp, 10))
   m$size_gap = abs(m$estimate_cmp - m$estimate_ref)
   m$interval_agreement = interval_agreement(m$excludes_zero_ref,
                                             m$excludes_zero_cmp)
@@ -304,9 +327,11 @@ summarise_comparison = function(cells, contrasts) {
               sum(cells$all_identical_ref), sum(cells$all_identical_cmp)))
 }
 
-# Build the three comparison tables and write them as csv files (tables only)
+# Build the three comparison tables and write them as csv files (tables only).
+# tag is added to the file names so that several comparisons can live in the
+# same folder. The default (empty) tag gives the original file names.
 compare_specs = function(ref, cmp, out_dir = file.path("results", "comparison"),
-                         ...) {
+                         tag = "", ...) {
   dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
   cells = compare_cells(ref, cmp)
   contrasts = compare_contrasts(ref, cmp)
@@ -316,22 +341,56 @@ compare_specs = function(ref, cmp, out_dir = file.path("results", "comparison"),
     d[] = lapply(d, function(x) if (is.double(x)) round(x, 4) else x)
     d
   }
-  write.csv(round_numbers(cells), file.path(out_dir, "cell_comparison.csv"),
+  write.csv(round_numbers(cells),
+            file.path(out_dir, paste0("cell_comparison", tag, ".csv")),
             row.names = FALSE, ...)
   write.csv(round_numbers(contrasts),
-            file.path(out_dir, "contrast_comparison.csv"),
+            file.path(out_dir, paste0("contrast_comparison", tag, ".csv")),
             row.names = FALSE, ...)
   write.csv(round_numbers(summary_tab),
-            file.path(out_dir, "comparison_summary.csv"),
+            file.path(out_dir, paste0("comparison_summary", tag, ".csv")),
             row.names = FALSE, ...)
   cat("Comparison tables written to", out_dir, "\n")
   invisible(list(cells = cells, contrasts = contrasts, summary = summary_tab))
 }
 
+# One overview table for a slide: one row per summary metric, one column per
+# comparison. comparisons is a named list of the results of compare_specs().
+overview_table = function(comparisons,
+                          out_dir = file.path("results", "comparison")) {
+  metrics = comparisons[[1]]$summary$metric
+  values = lapply(comparisons, function(x) round(x$summary$value, 4))
+  tab = data.frame(metric = metrics, values, check.names = FALSE,
+                   stringsAsFactors = FALSE)
+  write.csv(tab, file.path(out_dir, "comparison_overview.csv"),
+            row.names = FALSE)
+  cat("Overview table written to", out_dir, "\n")
+  invisible(tab)
+}
+
 # ---- 9. Run -------------------------------------------------------------------
 
-res_gptoss_normal   = run_spec(SPEC_GPTOSS_NORMAL)
-res_gptoss_reversed = run_spec(SPEC_GPTOSS_REVERSED)
+res_gptoss_normal    = run_spec(SPEC_GPTOSS_NORMAL)
+res_gptoss_reversed  = run_spec(SPEC_GPTOSS_REVERSED)
+res_mistral_normal   = run_spec(SPEC_MISTRAL_NORMAL)
+res_mistral_reversed = run_spec(SPEC_MISTRAL_REVERSED)
 
-# Reference is normal, every difference is reversed minus normal
+# Scale direction sensitivity: reference is normal, differences are
+# reversed minus normal
 comparison = compare_specs(res_gptoss_normal, res_gptoss_reversed)
+comparison_mistral_scale = compare_specs(res_mistral_normal,
+                                         res_mistral_reversed,
+                                         tag = "_mistral_scale")
+
+# Model sensitivity: reference is GPT OSS, differences are Mistral minus GPT OSS
+comparison_model_normal = compare_specs(res_gptoss_normal, res_mistral_normal,
+                                        tag = "_model_normal")
+comparison_model_reversed = compare_specs(res_gptoss_reversed,
+                                          res_mistral_reversed,
+                                          tag = "_model_reversed")
+
+overview = overview_table(list(
+  "gptoss reversed vs normal"     = comparison,
+  "mistral reversed vs normal"    = comparison_mistral_scale,
+  "mistral vs gptoss normal"      = comparison_model_normal,
+  "mistral vs gptoss reversed"    = comparison_model_reversed))

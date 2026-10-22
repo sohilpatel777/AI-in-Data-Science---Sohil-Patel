@@ -1,0 +1,11 @@
+"metric","value"
+"mean absolute difference of cell means",0.1814
+"mean signed difference of cell means (cmp minus ref)",-0.0526
+"correlation of cell means",0.3139
+"share of contrasts with the same sign",0.7143
+"mean absolute gap in contrast size",0.1832
+"contrasts with interval excluding zero in both",0
+"contrasts with interval excluding zero in one",7
+"contrasts with interval excluding zero in neither",14
+"flat cells in ref",0
+"flat cells in cmp",0

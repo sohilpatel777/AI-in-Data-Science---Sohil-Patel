@@ -1,0 +1,11 @@
+"metric","gptoss reversed vs normal","mistral reversed vs normal","mistral vs gptoss normal","mistral vs gptoss reversed"
+"mean absolute difference of cell means",0.7963,0.6576,0.1814,1.5065
+"mean signed difference of cell means (cmp minus ref)",0.7963,-0.6576,-0.0526,-1.5065
+"correlation of cell means",0.2368,0.492,0.3139,0.0817
+"share of contrasts with the same sign",0.4762,0.381,0.7143,0.381
+"mean absolute gap in contrast size",0.2469,0.2626,0.1832,0.3016
+"contrasts with interval excluding zero in both",1,0,0,0
+"contrasts with interval excluding zero in one",7,6,7,8
+"contrasts with interval excluding zero in neither",13,15,14,13
+"flat cells in ref",0,0,0,0
+"flat cells in cmp",0,0,0,0
